@@ -4,7 +4,10 @@ import path from 'path';
 
 // Define a City class with name and id properties
 class City {
-    constructor(id, name) {
+    id: any;
+    name: any;
+
+    constructor(id: any, name: any) {
         this.id = id;
         this.name = name;
     }
@@ -12,7 +15,7 @@ class City {
 
 // HistoryService class
 class HistoryService {
-    saveCity(_city) {
+    saveCity(_city: any) {
         throw new Error('Method not implemented.');
     }
 
@@ -22,7 +25,7 @@ class HistoryService {
         try {
             const data = await fs.promises.readFile(filePath, 'utf-8');
             const cities = JSON.parse(data);
-            return cities.map((city) => new City(city.id, city.name));
+            return cities.map((city: { id: any; name: any; }) => new City(city.id, city.name));
         }
         catch (error) {
             console.error('Error reading search history:', error);
@@ -31,7 +34,7 @@ class HistoryService {
     }
 
     // Write method to write to the searchHistory.json file
-    async write(cities) {
+    async write(cities: any) {
         const filePath = path.join(__dirname, 'searchHistory.json');
         try {
             const data = JSON.stringify(cities, null, 2);
@@ -48,7 +51,7 @@ class HistoryService {
     }
 
     // Add a new city to the search history
-    async addCity(city) {
+    async addCity(city: any) {
         const cities = await this.read();
         const id = (cities.length + 1).toString();
         cities.push(new City(id, city));
@@ -56,9 +59,9 @@ class HistoryService {
     }
 
     // Remove a city by id from the search history
-    async removeCity(id) {
+    async removeCity(id: any) {
         const cities = await this.read();
-        const updatedCities = cities.filter(city => city.id !== id);
+        const updatedCities = cities.filter((city: { id: any; }) => city.id !== id);
         await this.write(updatedCities);
     }
 }
