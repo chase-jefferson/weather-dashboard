@@ -29,7 +29,7 @@ class WeatherService {
 
   constructor() {
     this.baseURL = 'https://api.openweathermap.org/data/2.5';
-    this.apiKey = process.env.WEATHER_API_KEY || '';
+    this.apiKey = process.env.API_KEY || '66e829bb32b3b760e96d339d956ef245';
     this.cityName = '';
   }
   // TODO: Create fetchLocationData method
