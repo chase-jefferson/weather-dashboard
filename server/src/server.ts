@@ -1,5 +1,6 @@
 import dotenv from 'dotenv';
 import express from 'express';
+import cors from 'cors';
 dotenv.config();
 
 // Import the routes
@@ -19,3 +20,5 @@ app.use(routes);
 
 // Start the server on the port
 app.listen(PORT, () => console.log(`Listening on PORT: ${PORT}`));
+
+app.use(cors());
