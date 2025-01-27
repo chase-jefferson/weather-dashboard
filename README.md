@@ -19,7 +19,7 @@ The purpose of this project was to create a weather dashboard application using 
 
 * [Questions](#questions)
 
-* [Link to Video](#LinkToVideo)
+* [Link to Application](#LinkToVideo)
 
 ## Installation
 
