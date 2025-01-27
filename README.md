@@ -40,11 +40,10 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 ## Tests
 
-To run tests, run the following command:
+To build the application to test, run the following command:
 
 ```
-npm run build
-npm run start
+npm run client:build && npm run server
 ```
 
 ## Questions
