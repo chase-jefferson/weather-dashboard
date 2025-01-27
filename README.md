@@ -53,5 +53,5 @@ If you have any questions about the repo, open an issue or contact me directly a
 
 ## Application Link
 
-![Link to Application]([https://img.shields.io/badge/license-MIT-blue.svg](https://drive.google.com/file/d/1kd4s-wvcsUFCiTiVTDI-n094uRUVYrLv/view?usp=sharing)](https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid=66e829bb32b3b760e96d339d956ef245))
+![Link to Application]([https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid=66e829bb32b3b760e96d339d956ef245))
 
