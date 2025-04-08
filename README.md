@@ -54,3 +54,6 @@ If you have any questions about the repo, open an issue or contact me directly a
 
 ![Link to Application]([https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid=66e829bb32b3b760e96d339d956ef245)
 
+## Link to Deployed Service
+![Link to Service]([[https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid=66e829bb32b3b760e96d339d956ef245](https://weather-dashboard-api-2zsw.onrender.com))
+
